@@ -1,4 +1,4 @@
-import CroatiaSvg from './CroatiaSvg'
+import CroatiaSvg from './Assets/SVG/CroatiaSvg'
 
 const Main = ()=>{
     return(
