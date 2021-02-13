@@ -1,11 +1,9 @@
-import CroatiaSvg from './CroatiaSvg';
-
+import CroatiaSvg from './CroatiaSvg'
 
 const Main = ()=>{
     return(
-        <div>
-        <p>{CroatiaSvg()}</p>
-
+        <div className='main'>
+            {/* <CroatiaSvg /> */}
         </div>
     )
 }
