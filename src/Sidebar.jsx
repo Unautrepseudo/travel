@@ -1,10 +1,10 @@
 import React,{useState} from 'react'
 import {useGlobalContext} from './context'
-import NavLinks from './NavLinks'
+import navLinks from './NavLinks'
 
 const Sidebar =()=>{
         const{isSidebarOpen}=useGlobalContext()
-        const [links,setLinks] = useState(NavLinks)
+        const [links,setLinks] = useState(navLinks)
 
     return(
         <aside>

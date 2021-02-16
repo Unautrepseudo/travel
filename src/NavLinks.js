@@ -1,8 +1,6 @@
-import React from 'react';
-
 const navLinks = ()=>[
     {
-        name: 'Amérique du Nord',
+        name: 'Canada',
         countries:[
             {
                 title:'Montreal',

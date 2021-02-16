@@ -138,13 +138,15 @@ svg {
 .side-name {
   font-size: 30px;
 }
-
+/***********SUBMENU*************/
 .submenu {
   background: rgba(0, 0, 0, 0.2);
 }
 .sublinks-container {
   border: 1px solid black;
   position: absolute;
+  transform: translateX(-40%);
+  transition: 0.2s;
 }
 /****************RESPONSIVE****************/
 @media (max-width: 1447px) {
