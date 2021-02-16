@@ -17,13 +17,13 @@ const Submenu = () => {
   }, [location]);
 
   return (
-    <div className="submenu">
+    <div className="submenu sub">
       <div className="sublinks-container" ref={submenu}>
         {countries.map(({ thumb, title }, index) => {
           return (
-            <div key={index} className="thumb-container">
-              <img className="side-thumb" src={thumb} alt={title} />
-              <p>{title}</p>
+            <div key={index} className="sub-cont">
+              <p className="sub-title">{title}</p>
+              <img className="sub-thumb" src={thumb} alt={title} />
             </div>
           );
         })}
