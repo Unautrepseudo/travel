@@ -17,18 +17,19 @@ const Header = () => {
         const bottom = coord.bottom - 3;
         openSubmenu(linkText, { left, bottom })
     }
+    const { closeSubmenu } = useGlobalContext()
 
 
 
     return (
         <>
-            <div className='head' >
+            <div className='head' onMouseOver={closeSubmenu}>
                 <p className="title" >Carnet de voyage</p>
                 <nav className="nav">
                     <ul className='sub'>
                         {links.map(({ name }, i) => {
                             return (
-                                <span key={i} onMouseOver={displaySubmenu}>{name}</span>)
+                                <span className='sub' key={i} onMouseOver={displaySubmenu}>{name}</span>)
                         })}
                     </ul>
                 </nav>

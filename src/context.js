@@ -27,8 +27,6 @@ export const AppProvider = ({ children }) => {
   const closeSubmenu = (e) => {
     if (!e.target.classList.contains('sub')) {
       setIsSubmenuOpen(false);
-
-      console.log(isSubmenuOpen);
     }
   };
 

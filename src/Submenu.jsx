@@ -17,13 +17,15 @@ const Submenu = () => {
   }, [location]);
 
   return (
-    <div className="submenu sub">
-      <div className="sublinks-container" ref={submenu}>
+    <div className={`${!isSubmenuOpen ? 'submenu show-submenu' : 'hide'}sub  `}>
+      <div className="sublinks-container sub" ref={submenu}>
         {countries.map(({ thumb, title }, index) => {
           return (
-            <div key={index} className="sub-cont">
+            <div key={index} className="sub-cont sub">
               <p className="sub-title">{title}</p>
-              <img className="sub-thumb" src={thumb} alt={title} />
+              <span className="subthumb-cont">
+                <img className="sub-thumb" src={thumb} alt={title} />
+              </span>
             </div>
           );
         })}

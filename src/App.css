@@ -28,7 +28,6 @@ svg {
 
 .show-submenu {
   display: flex;
-  background: red;
 }
 
 /******************HEADER****************/
@@ -75,6 +74,7 @@ svg {
   letter-spacing: 2px;
   width: 40%;
   text-shadow: 1px 2px rgba(255, 255, 255, 0.205);
+  cursor: pointer;
 }
 
 .nav {
@@ -103,6 +103,7 @@ svg {
   border: none;
   transform: translate(80px, 30px);
   display: none;
+  cursor: pointer;
 }
 
 .fanav {
@@ -125,16 +126,15 @@ svg {
   width: 40px;
   height: 40px;
   border-radius: 5px;
+  transition: 0.2s;
+  margin-right: 8px;
 }
 
 .thumb-container {
   display: flex;
   align-items: center;
   margin-right: 10px;
-}
-
-.side-thumb {
-  margin-right: 8px;
+  cursor: pointer;
 }
 
 .thumb-container p {
@@ -147,7 +147,7 @@ svg {
 /***********SUBMENU*************/
 .submenu {
   background: rgba(0, 0, 0, 0.2);
-  display: flex;
+  display: none;
 }
 .sublinks-container {
   position: absolute;
@@ -160,7 +160,7 @@ svg {
     transparent,
     transparent
   );
-  width: 40%;
+  max-width: 40%;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -180,8 +180,18 @@ svg {
 }
 .sub-thumb {
   width: 130px;
-  height: 70px;
+  transition: 0.2s;
   border-radius: 8px;
+}
+
+.subthumb-cont {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.sub-thumb:hover,
+.side-thumb:hover {
+  transform: scale(1.5);
 }
 
 .sublinks-container::before {
