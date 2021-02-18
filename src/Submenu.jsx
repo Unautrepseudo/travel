@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { useGlobalContext } from './context';
+import { Link } from 'react-router-dom';
 
 const Submenu = () => {
   const {
@@ -18,7 +19,12 @@ const Submenu = () => {
 
   return (
     <div className={`${!isSubmenuOpen ? 'submenu show-submenu' : 'hide'}sub  `}>
-      <div className="sublinks-container sub" ref={submenu}>
+      <Link
+        to="/pays"
+        className="sublinks-container sub"
+        style={{ color: 'black' }}
+        ref={submenu}
+      >
         {countries.map(({ thumb, title }, index) => {
           return (
             <div key={index} className="sub-cont sub">
@@ -29,7 +35,7 @@ const Submenu = () => {
             </div>
           );
         })}
-      </div>
+      </Link>
     </div>
   );
 };

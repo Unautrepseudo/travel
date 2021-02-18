@@ -1,7 +1,11 @@
 import React from 'react';
 
 const Continent = () => {
-  return <h1>page continent</h1>;
+  return (
+    <section className="continent">
+      <h1>page continent</h1>
+    </section>
+  );
 };
 
 export default Continent;

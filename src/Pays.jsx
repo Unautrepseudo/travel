@@ -1,7 +1,11 @@
 import React from 'react';
 
 const Pays = () => {
-  return <h1>page Pays</h1>;
+  return (
+    <section className="pays">
+      <h1>page Pays</h1>
+    </section>
+  );
 };
 
 export default Pays;

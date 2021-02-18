@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useGlobalContext } from './context';
 import navLinks from './NavLinks';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   const { isSidebarOpen } = useGlobalContext();
@@ -11,7 +12,7 @@ const Sidebar = () => {
       <div className={`${isSidebarOpen ? 'sidebar' : 'show-sidebar '}`}>
         {links.map(({ name, countries }, i) => {
           return (
-            <div key={i}>
+            <Link to="pays" key={i} style={{ color: 'black' }}>
               <h2 className="side-name">{name}</h2>
               {countries.map(({ thumb, title }, index) => {
                 return (
@@ -23,7 +24,7 @@ const Sidebar = () => {
                   </div>
                 );
               })}
-            </div>
+            </Link>
           );
         })}
       </div>

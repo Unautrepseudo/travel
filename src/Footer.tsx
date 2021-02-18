@@ -1,7 +1,7 @@
-const Footer = ()=>{
-    return(
+const Footer = () => {
+    return (
         <div className="footer">
-            Et moi je suis le footer
+            Initiation React. CSS syndical. 02/21
         </div>
     )
 }
