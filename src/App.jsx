@@ -21,9 +21,7 @@ function App() {
           <Route exact path="/continent">
             <Continent />
           </Route>
-          <Route exact path="/pays">
-            <Pays />
-          </Route>
+          <Route exact path="/:title" children={<Pays />}></Route>
           <Route path="*">
             <Error />
           </Route>

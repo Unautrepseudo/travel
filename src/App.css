@@ -262,3 +262,21 @@ svg {
     border-radius: 5px;
   }
 }
+
+/********ERROR PAGE *****/
+
+.error-page {
+  width: 100%;
+  height: 84vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chevre-container {
+  align-self: flex-end;
+  width: 50%;
+}
+
+.chevre {
+  width: 100%;
+}

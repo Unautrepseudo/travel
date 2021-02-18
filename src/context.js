@@ -21,7 +21,6 @@ export const AppProvider = ({ children }) => {
     setSubmenuContent(content);
     setLocation(coordinates);
     setIsSubmenuOpen(true);
-    console.log(isSubmenuOpen);
   };
 
   const closeSubmenu = (e) => {

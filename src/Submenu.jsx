@@ -19,23 +19,23 @@ const Submenu = () => {
 
   return (
     <div className={`${!isSubmenuOpen ? 'submenu show-submenu' : 'hide'}sub  `}>
-      <Link
-        to="/pays"
-        className="sublinks-container sub"
-        style={{ color: 'black' }}
-        ref={submenu}
-      >
+      <div className="sublinks-container sub" ref={submenu}>
         {countries.map(({ thumb, title }, index) => {
           return (
-            <div key={index} className="sub-cont sub">
+            <Link
+              to={`/${title}`}
+              style={{ color: 'black' }}
+              key={index}
+              className="sub-cont sub"
+            >
               <p className="sub-title">{title}</p>
               <span className="subthumb-cont">
                 <img className="sub-thumb" src={thumb} alt={title} />
               </span>
-            </div>
+            </Link>
           );
         })}
-      </Link>
+      </div>
     </div>
   );
 };
