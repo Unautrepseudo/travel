@@ -5,19 +5,19 @@ import logo from './404chevre.gif';
 const Error = () => {
   return (
     <div className="error-page">
-      <p>
+      <p className="error-text">
         {' '}
-        La page recherchée n'existe pas. En punition voici une page d'erreur
-        bien moche.
+        Vous avez bidouillé l'url. La page recherchée n'existe pas. En guise de
+        punition voici une page d'erreur bien moche.
       </p>
-      <Link to="/continent">
-        <button>
-          Ca brule les yeux. Retour à la page d'acceuil s'il vous plait
-        </button>
-      </Link>
       <span className="chevre-container">
         <img className="chevre" src={logo} alt="" />
       </span>
+      <Link to="/" className="error-btn">
+        <button className="error-btn">
+          Ca brule les yeux. Retour à la page d'acceuil s'il vous plait
+        </button>
+      </Link>
     </div>
   );
 };

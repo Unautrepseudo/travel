@@ -23,7 +23,7 @@ const Submenu = () => {
         {countries.map(({ thumb, title }, index) => {
           return (
             <Link
-              to={`/${title}`}
+              to={`/continent/${title}`}
               style={{ color: 'black' }}
               key={index}
               className="sub-cont sub"

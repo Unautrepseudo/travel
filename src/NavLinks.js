@@ -1,11 +1,11 @@
 const navLinks = () => [
   {
-    name: 'Canada',
+    name: 'Amérique',
     svgContinent: './Assets/SVG/canada.svg',
 
     countries: [
       {
-        title: 'Montreal',
+        title: 'Canada',
         svg: './Assets/SVG/canada.svg',
         thumb: './Assets/IMG/canada/can01-thumb.jpg',
         mid: './Assets/IMG/canada/can01-mid.jpg',

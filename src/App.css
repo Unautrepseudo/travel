@@ -153,6 +153,7 @@ svg {
 .submenu {
   background: rgba(0, 0, 0, 0.2);
   display: none;
+  z-index: 1;
 }
 .sublinks-container {
   position: absolute;
@@ -266,17 +267,76 @@ svg {
 /********ERROR PAGE *****/
 
 .error-page {
-  width: 100%;
+  width: 50%;
   height: 84vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  color: white;
+  background: rgb(236, 34, 7);
+  border-radius: 2%;
 }
 
 .chevre-container {
   align-self: flex-end;
-  width: 50%;
+  width: 80%;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .chevre {
   width: 100%;
+}
+.error-text {
+  font-size: 35px;
+  color: rgb(9, 255, 9);
+  text-shadow: 5px 5px 5px rgb(0, 217, 255);
+  text-align: center;
+}
+
+.error-btn {
+  align-self: center;
+  font-size: 30px;
+  border-radius: 5px;
+  box-shadow: 1px 4px 15px rgb(250, 4, 250);
+  cursor: pointer;
+  z-index: 13;
+}
+/*************CONTINENT*************/
+
+.cont-menu {
+  display: flex;
+}
+
+.cont-left {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  border-radius: 2%;
+  perspective: 80px;
+  max-height: 75vh;
+}
+
+.cont-left img {
+  width: 100%;
+  animation-name: turning;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes turning {
+  from {
+    transform: rotateY(-2.5deg);
+  }
+
+  to {
+    transform: rotateY(2.5deg);
+  }
+}
+
+.cont-right {
+  background: red;
+  width: 60%;
 }
