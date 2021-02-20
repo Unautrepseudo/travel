@@ -18,12 +18,14 @@ const Submenu = () => {
   }, [location]);
 
   return (
-    <div className={`${!isSubmenuOpen ? 'submenu show-submenu' : 'hide'}sub  `}>
+    <div
+      className={`${!isSubmenuOpen ? 'submenu show-submenu' : 'hide'} sub  `}
+    >
       <div className="sublinks-container sub" ref={submenu}>
         {countries.map(({ thumb, title }, index) => {
           return (
             <Link
-              to={`/continent/${title}`}
+              to={`/${title}`}
               style={{ color: 'black' }}
               key={index}
               className="sub-cont sub"

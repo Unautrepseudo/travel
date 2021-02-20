@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useRef } from 'react';
 import navLinks from './NavLinks';
 
 const AppContext = React.createContext();

@@ -153,23 +153,31 @@ svg {
 .submenu {
   background: rgba(0, 0, 0, 0.2);
   display: none;
-  z-index: 1;
+  position: relative;
 }
 .sublinks-container {
   position: absolute;
   transform: translateX(-44%);
-  transition: 0.2s;
+  transition: 0.4s;
   display: flex;
   background: radial-gradient(
     at 40% 35%,
     rgba(255, 153, 8, 0.9),
     transparent,
-    transparent
+    rgba(0, 0, 0, 0.882)
   );
   max-width: 40%;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  z-index: 50;
+  border-radius: 12px;
+  padding-bottom: 20px;
+}
+
+.sub-cont:hover {
+  color: white !important;
+  text-shadow: 1px 1px 12px rgba(255, 252, 252, 0.924);
 }
 
 .sub-cont {
@@ -177,12 +185,13 @@ svg {
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
-  font-size: 22px;
+  font-size: 24px;
   padding-top: 15px;
   cursor: pointer;
   padding-left: 10px;
   padding-right: 10px;
-  text-shadow: 1px 2px rgba(0, 0, 0, 0.205);
+  transition: 0.3s;
+  text-shadow: 1px 1px rgba(212, 212, 212, 0.158);
 }
 .sub-thumb {
   width: 130px;
@@ -301,34 +310,37 @@ svg {
   border-radius: 5px;
   box-shadow: 1px 4px 15px rgb(250, 4, 250);
   cursor: pointer;
-  z-index: 13;
 }
 /*************CONTINENT*************/
 
+.continent {
+  min-height: 84vh;
+  margin-right: 10px;
+  overflow: hidden;
+}
 .cont-menu {
   display: flex;
+  height: 100%;
 }
 
 .cont-left {
-  width: 60%;
+  width: 50%;
   display: flex;
-  justify-content: center;
+  justify-self: self-start;
   border-radius: 2%;
   perspective: 80px;
-  max-height: 75vh;
+  align-items: center;
 }
 
 .cont-left img {
-  width: 100%;
-  animation-name: turning;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  width: 75%;
+  animation: turning 6s infinite alternate;
+  padding-left: 100px;
 }
 
 @keyframes turning {
   from {
-    transform: rotateY(-2.5deg);
+    transform: rotateY(-3deg);
   }
 
   to {
@@ -337,6 +349,54 @@ svg {
 }
 
 .cont-right {
-  background: red;
-  width: 60%;
+  border-radius: 15px;
+  width: 45%;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 15px;
+  height: 85%;
+}
+
+.cont-card-container {
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 75%;
+  transition: 0.4s;
+  opacity: 0.9;
+  cursor: pointer;
+  transform: rotateZ(12deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.toto:hover {
+  width: 90vw;
+  height: 95%;
+  transform: translateZ(20px);
+  border-radius: 15px;
+  opacity: 1;
+  background-position: center;
+  box-shadow: 6px 8px 14px rgba(0, 0, 0, 0.788);
+  transform: rotateZ(0);
+  z-index: 20;
+}
+
+.cont-card-name {
+  background: linear-gradient(
+    90deg,
+    rgb(15, 2, 2) 0%,
+    rgb(0, 0, 0) 55%,
+    rgba(34, 4, 4, 0.8) 100%
+  );
+  color: white;
+  font-size: 23px;
+  justify-self: flex-end;
+  border-radius: 0 0 8px 8px;
+  text-align: center;
+  padding: 10px;
 }
