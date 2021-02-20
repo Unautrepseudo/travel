@@ -416,40 +416,78 @@ svg {
 }
 
 .pays-left {
-  width: 30%;
+  width: 45%;
   display: flex;
+  flex-direction: column;
   justify-self: self-start;
   border-radius: 2%;
   perspective: 80px;
   align-items: center;
+  justify-content: space-between;
 }
 
-.pays-left img {
-  width: 75%;
-  animation: turning 6s infinite alternate;
-  padding-left: 100px;
+.pays-left .svg {
+  width: 60%;
+  animation: turning 12s infinite alternate;
+  padding-left: 30px;
+}
+
+.flag {
+  padding-top: 60px;
+  width: 300px;
+  opacity: 0.9;
+}
+
+.pays-infos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pays-title {
+  font-family: var(--font01);
+  font-size: 100px;
+  width: 100%;
+  background: radial-gradient(
+    at 50% 50%,
+    rgb(255, 153, 8),
+    transparent,
+    transparent
+  );
+  text-align: center;
 }
 
 .pays-right {
   border-radius: 15px;
   width: 70%;
+  padding-right: 30px;
+  height: 100%;
   display: flex;
-  align-self: center;
-  align-items: center;
-  padding-left: 25px;
-  padding-right: 15px;
-  height: 85%;
-  background: red;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .pays-card {
-  width: 400px;
-  height: 200px;
+  width: 100%;
 }
 
 .pays-card img {
   width: 100%;
   border-radius: 12px;
+  box-shadow: 6px 8px 14px rgba(0, 0, 0, 0.527);
+}
+
+.undo {
+  font-size: 28px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.circle-container {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.overlay {
+  text-align: center;
+  border-radius: 8px;
 }
