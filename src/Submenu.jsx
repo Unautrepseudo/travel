@@ -7,9 +7,14 @@ const Submenu = () => {
     isSubmenuOpen,
     location,
     submenuContent: { countries },
+    setIsSubmenuOpen,
   } = useGlobalContext();
 
   const submenu = useRef(null);
+
+  const toggleMenu = () => {
+    setIsSubmenuOpen(false);
+  };
 
   useEffect(() => {
     const subCurrent = submenu.current;
@@ -29,6 +34,7 @@ const Submenu = () => {
               style={{ color: 'black' }}
               key={index}
               className="sub-cont sub"
+              onClick={toggleMenu}
             >
               <p className="sub-title">{title}</p>
               <span className="subthumb-cont">
