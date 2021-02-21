@@ -14,9 +14,9 @@ const Header = () => {
     setIsSubmenuOpen,
   } = useGlobalContext();
   const [links, setLinks] = useState(navLinks);
-  const [isActive, setIsActive] = useState(false);
   const { closeSubmenu } = useGlobalContext();
   const subLinks = useRef(null);
+  const [value, setValue] = useState(null);
 
   const displaySubmenu = (e) => {
     const linkText = e.target.textContent;
@@ -25,32 +25,29 @@ const Header = () => {
     const bottom = coord.bottom - 3;
     openSubmenu(linkText, { left, bottom });
   };
-  const handleChange = (e) => {
-    setIsActive(!isActive);
-    isActive
-      ? (e.target.style.color = 'white') &&
-        (e.target.style.textShadow = '1px 1px 12px rgba(255, 252, 252, 0.924)')
-      : (e.target.style.color = 'black') && (e.target.style.textShadow = null);
-    setIsSubmenuOpen(false);
-  };
 
   return (
     <>
       <div className="head" onMouseOver={closeSubmenu}>
-        <Link to="/" style={{ color: 'black' }} className="title">
+        <Link
+          to="/"
+          style={{ color: 'black' }}
+          className="title"
+          onClick={() => setValue(null)}
+        >
           Carnet de voyage
         </Link>
 
         <nav className="nav">
           <ul className="sub">
-            {links.map(({ name }, i) => {
+            {links.map(({ name, id }, i) => {
               return (
                 <Link to="/continent">
                   <span
-                    className="sub"
-                    key={i}
+                    className={`sub ${i === value && 'is-active'}`}
+                    key={id}
                     onMouseOver={displaySubmenu}
-                    onClick={handleChange}
+                    onClick={() => setValue(i)}
                     useRef={subLinks}
                   >
                     {name}

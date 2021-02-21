@@ -98,11 +98,6 @@ svg {
   width: 120px;
 }
 
-/* .nav ul span:hover {
-  text-shadow: 1px 2px rgba(54, 54, 54, 0.281);
-  color: black;
-} */
-
 .toggle-menu {
   background-color: transparent;
   border: none;
@@ -176,9 +171,8 @@ svg {
 }
 
 .sub-cont:hover,
-.nav ul span:hover {
+.sub:hover {
   color: white !important;
-  text-shadow: 1px 1px 12px rgba(255, 252, 252, 0.924);
 }
 
 .is-active {
@@ -473,7 +467,6 @@ svg {
 
 .pays-card img {
   width: 100%;
-
   border-radius: 12px;
   box-shadow: 6px 8px 14px rgba(7, 7, 7, 0.129);
 }
@@ -489,9 +482,17 @@ svg {
   cursor: pointer;
   display: flex;
   justify-content: space-between;
+  height: 50px;
 }
 
 .overlay {
   text-align: center;
   border-radius: 8px;
+}
+
+/*******change*********/
+
+.tutu {
+  fill: rgba(240, 93, 8, 0.815);
+  transition: 0.2s;
 }

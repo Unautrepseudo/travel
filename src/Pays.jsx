@@ -9,7 +9,7 @@ import navLinks from './data';
 const Pays = () => {
   // const { title } = useParams();
   const [data, setData] = useState(navLinks);
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState(null);
 
   const { countries } = data[0];
 
@@ -44,7 +44,11 @@ const Pays = () => {
                       <span>
                         {mid.map((item, i) => {
                           return (
-                            <FaCircle key={i + 1} onClick={() => setValue(i)} />
+                            <FaCircle
+                              key={i}
+                              className={` ${i === value && 'tutu'}`}
+                              onClick={() => setValue(i)}
+                            />
                           );
                         })}
                       </span>

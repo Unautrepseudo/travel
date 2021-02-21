@@ -31,7 +31,7 @@ const navLinks = () => [
   {
     id: 2,
     name: 'Europe',
-    svgContinent: './Assets/SVG/canada.svg',
+    svgContinent: './Assets/SVG/europe.svg',
 
     countries: [
       {
@@ -71,7 +71,7 @@ const navLinks = () => [
   {
     id: 3,
     name: ' Asie',
-    svgContinent: './Assets/SVG/canada.svg',
+    svgContinent: './Assets/SVG/asie.svg',
 
     countries: [
       {
