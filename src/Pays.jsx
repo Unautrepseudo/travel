@@ -9,7 +9,7 @@ import navLinks from './data';
 const Pays = () => {
   // const { title } = useParams();
   const [data, setData] = useState(navLinks);
-  const [value, setValue] = useState(null);
+  const [value, setValue] = useState(0);
 
   const { countries } = data[0];
 
@@ -39,7 +39,12 @@ const Pays = () => {
               {mid.map((image, index) => {
                 return (
                   <article className="pays-card">
-                    <img key={value} src={image} alt="" />
+                    <img
+                      key={value}
+                      src={image}
+                      className={` pays-img ${index === value && 'titi'}`}
+                      alt=""
+                    />
                     <span className="icons-container" onClick={test}>
                       <span>
                         {mid.map((item, i) => {

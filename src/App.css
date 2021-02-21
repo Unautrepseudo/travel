@@ -465,15 +465,21 @@ svg {
   transform: translateX(-22%);
 }
 
-.pays-card img {
+.pays-img {
   width: 100%;
   border-radius: 12px;
   box-shadow: 6px 8px 14px rgba(7, 7, 7, 0.129);
+  opacity: 0;
 }
 
 .undo {
   font-size: 28px;
   cursor: pointer;
+  opacity: 0.2;
+}
+
+.undo:hover {
+  opacity: 1;
 }
 
 .icons-container {
@@ -493,6 +499,10 @@ svg {
 /*******change*********/
 
 .tutu {
-  fill: rgba(240, 93, 8, 0.815);
+  fill: rgba(0, 0, 0, 0.13);
   transition: 0.2s;
+}
+
+.titi {
+  opacity: 1 !important;
 }
