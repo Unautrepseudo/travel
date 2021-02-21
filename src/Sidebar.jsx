@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useGlobalContext } from './context';
-import navLinks from './NavLinks';
+import navLinks from './data';
 import { Link } from 'react-router-dom';
 
 const Sidebar = () => {

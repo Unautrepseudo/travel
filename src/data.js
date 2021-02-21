@@ -1,14 +1,23 @@
 const navLinks = () => [
   {
+    id: 1,
     name: 'Amérique',
-    svgContinent: './Assets/SVG/canada.svg',
+    svgContinent: './Assets/SVG/america.svg',
 
     countries: [
       {
         title: 'Canada',
-        svg: './Assets/SVG/canada.svg',
+        id: 1,
+        svg: './Assets/IMG/canada/canada.svg',
+        flag: './Assets/IMG/canada/can-flag.png',
         thumb: './Assets/IMG/canada/can01-thumb.jpg',
-        mid: './Assets/IMG/canada/can01-mid.jpg',
+        mid: [
+          './Assets/IMG/canada/can01-mid.jpg',
+          './Assets/IMG/canada/can02-mid.jpg',
+          './Assets/IMG/canada/can03-mid.jpg',
+          './Assets/IMG/canada/can04-mid.jpg',
+          './Assets/IMG/canada/can05-mid.jpg',
+        ],
         img: [
           './Assets/IMG/canada/can01.jpg',
           './Assets/IMG/canada/can02.jpg',
@@ -20,7 +29,10 @@ const navLinks = () => [
     ],
   },
   {
+    id: 2,
     name: 'Europe',
+    svgContinent: './Assets/SVG/canada.svg',
+
     countries: [
       {
         title: 'Albanie',
@@ -57,7 +69,10 @@ const navLinks = () => [
     ],
   },
   {
+    id: 3,
     name: ' Asie',
+    svgContinent: './Assets/SVG/canada.svg',
+
     countries: [
       {
         title: 'Cambodge',

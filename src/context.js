@@ -1,5 +1,5 @@
 import React, { useState, useContext, useRef } from 'react';
-import navLinks from './NavLinks';
+import navLinks from './data';
 
 const AppContext = React.createContext();
 

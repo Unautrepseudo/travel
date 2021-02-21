@@ -1,14 +1,12 @@
 import React from 'react';
 import { useGlobalContext } from './context';
 
-import svg from './SVG/america.svg';
-
 const Continent = () => {
   return (
     <section className="continent">
       <div className="cont-menu">
         <div className="cont-left">
-          <img src={svg} className="svg" alt="" />
+          <img src="./Assets/SVG/america.svg" className="svg" alt="" />
         </div>
         <div className="cont-right">
           <article
