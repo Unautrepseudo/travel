@@ -42,7 +42,7 @@ const Header = () => {
           <ul className="sub">
             {links.map(({ name, id }, i) => {
               return (
-                <Link to="/continent">
+                <Link to={`/${name}`}>
                   <span
                     className={`sub ${i === value && 'is-active'}`}
                     key={id}

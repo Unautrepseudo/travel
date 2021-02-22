@@ -17,7 +17,7 @@ const Continent = () => {
           >
             <div className="cont-card-name">Monte-negro</div>
           </article>
-          <article
+          {/* <article
             className="cont-card-container toto"
             style={{
               backgroundImage: "url('./Assets/IMG/canada/can02-mid.jpg')",
@@ -72,7 +72,7 @@ const Continent = () => {
             }}
           >
             <div className="cont-card-name">Pays</div>
-          </article>
+          </article> */}
         </div>
       </div>
     </section>
