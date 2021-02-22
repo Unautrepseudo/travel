@@ -1,8 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
-// import toto from './SVG/bulgarie.svg';
-// import svg from './SVG/bulgarie.svg';
-
 import { FaCircle, FaUndo } from 'react-icons/fa';
 import navLinks from './data';
 
@@ -10,16 +7,20 @@ const Pays = () => {
   // const { title } = useParams();
   const [data, setData] = useState(navLinks);
   const [value, setValue] = useState(0);
-
   const { countries } = data[0];
 
-  const test = (e) => {
-    console.log(value);
-    const test = countries.find(
-      (item) => item.mid === './Assets/IMG/canada/can01-mid.jpg'
-    );
-    console.log(test);
-  };
+  useEffect(() => {
+    let carousel = setInterval(() => {
+      setValue(value + 1);
+      if (value > 3) {
+        setValue(0);
+      }
+    }, 6000);
+    return () => {
+      clearInterval(carousel);
+    };
+  }, [value]);
+
   return (
     <section className="pays">
       {countries.map((country) => {
@@ -45,7 +46,7 @@ const Pays = () => {
                       className={` pays-img ${index === value && 'titi'}`}
                       alt=""
                     />
-                    <span className="icons-container" onClick={test}>
+                    <span className="icons-container">
                       <span>
                         {mid.map((item, i) => {
                           return (
