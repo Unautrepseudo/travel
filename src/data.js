@@ -11,6 +11,7 @@ const navLinks = () => [
         svg: './Assets/IMG/canada/canada.svg',
         flag: './Assets/IMG/canada/can-flag.png',
         thumb: './Assets/IMG/canada/can01-thumb.jpg',
+        bcgImg: './Assets/IMG/canada/can01-mid.jpg',
         mid: [
           './Assets/IMG/canada/can01-mid.jpg',
           './Assets/IMG/canada/can02-mid.jpg',
@@ -39,6 +40,8 @@ const navLinks = () => [
         svg: './Assets/SVG/albanie.svg',
         flag: './Assets/IMG/albanie/alb-flag.png',
         thumb: './Assets/IMG/albanie/alb01-thumb.jpg',
+        bcgImg: './Assets/IMG/albanie/alb01-mid.jpg',
+
         mid: [
           './Assets/IMG/albanie/alb01-mid.jpg',
           './Assets/IMG/albanie/alb02-mid.jpg',
@@ -59,6 +62,8 @@ const navLinks = () => [
         svg: './Assets/SVG/bulgarie/bulgarie.svg',
         flag: './Assets/IMG/bulgarie/bulg-flag.png',
         thumb: './Assets/IMG/bulgarie/bulg01-thumb.jpg',
+        bcgImg: './Assets/IMG/bulgarie/bulg01-mid.jpg',
+
         mid: [
           './Assets/IMG/bulgarie/bulg01-mid.jpg',
           './Assets/IMG/bulgarie/bulg02-mid.jpg',
@@ -78,7 +83,9 @@ const navLinks = () => [
         title: 'Croatie',
         svg: './Assets/SVG/croatie.svg',
         flag: './Assets/IMG/croatie/cro-flag.png',
-        thumb: './Assets/IMG/croatie/cro03-thumb.jpg',
+        thumb: './Assets/IMG/croatie/cro02-thumb.jpg',
+        bcgImg: './Assets/IMG/croatie/cro01-mid.jpg',
+
         mid: [
           './Assets/IMG/croatie/can01-mid.jpg',
           './Assets/IMG/croatie/can02-mid.jpg',
@@ -99,6 +106,8 @@ const navLinks = () => [
         svg: './Assets/SVG/grece.svg',
         flag: './Assets/IMG/grece/gre-flag.png',
         thumb: './Assets/IMG/grece/grece01-thumb.jpg',
+        bcgImg: './Assets/IMG/grece/grece01-mid.jpg',
+
         mid: [
           './Assets/IMG/grece/grece01-mid.jpg',
           './Assets/IMG/grece/grece02-mid.jpg',
@@ -119,6 +128,8 @@ const navLinks = () => [
         svg: './Assets/SVG/montenegro.svg',
         flag: './Assets/IMG/monte-negro/monte-flag.png',
         thumb: './Assets/IMG/monte-negro/monte01-thumb.jpg',
+        bcgImg: './Assets/IMG/monte-negro/monte01-mid.jpg',
+
         mid: [
           './Assets/IMG/monte-negro/monte01-mid.jpg',
           './Assets/IMG/monte-negro/monte02-mid.jpg',
@@ -139,6 +150,8 @@ const navLinks = () => [
         svg: './Assets/SVG/serbie.svg',
         flag: './Assets/IMG/serbie/serb-flag.png',
         thumb: './Assets/IMG/serbie/serb01-thumb.jpg',
+        bcgImg: './Assets/IMG/serbie/serb01-mid.jpg',
+
         mid: [
           './Assets/IMG/serbie/serb01-mid.jpg',
           './Assets/IMG/serbie/serb02-mid.jpg',
@@ -159,6 +172,8 @@ const navLinks = () => [
         svg: './Assets/SVG/slovenie.svg',
         flag: './Assets/IMG/slovenie/slo-flag.png',
         thumb: './Assets/IMG/slovenie/slo01-thumb.jpg',
+        bcgImg: './Assets/IMG/slovenie/slo01-mid.jpg',
+
         mid: [
           './Assets/IMG/slovenie/slo01-mid.jpg',
           './Assets/IMG/slovenie/slo02-mid.jpg',
@@ -179,6 +194,8 @@ const navLinks = () => [
         svg: './Assets/SVG/tcheque.svg',
         flag: './Assets/IMG/tcheque/tcheque-flag.png',
         thumb: './Assets/IMG/tcheque/prague01-thumb.jpg',
+        bcgImg: './Assets/IMG/tcheque/prague01-mid.jpg',
+
         mid: [
           './Assets/IMG/tcheque/prague01-mid.jpg',
           './Assets/IMG/tcheque/prague02-mid.jpg',
@@ -207,6 +224,8 @@ const navLinks = () => [
         svg: './Assets/SVG/cambodge.svg',
         flag: './Assets/IMG/cambodge/cambodge-flag.png',
         thumb: './Assets/IMG/cambodge/cambodge01-thumb.jpg',
+        bcgImg: './Assets/IMG/cambodge/cambodge01-mid.jpg',
+
         mid: [
           './Assets/IMG/cambodge/cambodge01-mid.jpg',
           './Assets/IMG/cambodge/cambodge02-mid.jpg',
@@ -227,6 +246,8 @@ const navLinks = () => [
         svg: './Assets/SVG/laos.svg',
         flag: './Assets/IMG/laos/laos-flag.png',
         thumb: './Assets/IMG/laos/laos03-thumb.jpg',
+        bcgImg: './Assets/IMG/laos/laos01-mid.jpg',
+
         mid: [
           './Assets/IMG/laos/laos01-mid.jpg',
           './Assets/IMG/laos/laos02-mid.jpg',
@@ -247,6 +268,8 @@ const navLinks = () => [
         svg: './Assets/SVG/thailande.svg',
         flag: './Assets/IMG/thailande/thai-flag.png',
         thumb: './Assets/IMG/thailande/thai01-thumb.jpg',
+        bcgImg: './Assets/IMG/thailande/thai01-mid.jpg',
+
         mid: [
           './Assets/IMG/thailande/thai01-mid.jpg',
           './Assets/IMG/thailande/thai02-mid.jpg',
@@ -267,6 +290,8 @@ const navLinks = () => [
         svg: './Assets/SVG/vietnam.svg',
         flag: './Assets/IMG/vietnam/viet-flag.png',
         thumb: './Assets/IMG/vietnam/viet01-thumb.jpg',
+        bcgImg: './Assets/IMG/vietnam/viet01-mid.jpg',
+
         mid: [
           './Assets/IMG/vietnam/viet01-mid.jpg',
           './Assets/IMG/vietnam/viet02-mid.jpg',

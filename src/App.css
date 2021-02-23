@@ -330,12 +330,13 @@ svg {
   border-radius: 2%;
   perspective: 80px;
   align-items: center;
+  justify-content: center;
 }
 
 .cont-left img {
-  width: 75%;
+  width: 80%;
   animation: turning 6s infinite alternate;
-  padding-left: 100px;
+  border-radius: 50%;
 }
 
 @keyframes turning {
@@ -354,7 +355,7 @@ svg {
   display: flex;
   align-self: center;
   align-items: center;
-  padding-left: 25px;
+  padding-left: 65px;
   height: 85%;
   justify-content: center;
 }

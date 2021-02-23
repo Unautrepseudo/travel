@@ -3,7 +3,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { useGlobalContext } from './context';
 import navLinks from './data';
 import Submenu from './Submenu';
-import { Link } from 'react-router-dom';
+import { Link, useRouteMatch } from 'react-router-dom';
 
 const Header = () => {
   const {

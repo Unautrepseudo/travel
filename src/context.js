@@ -7,6 +7,7 @@ export const AppProvider = ({ children }) => {
   const [isSidebarOpen, setisSidebarOpen] = useState(false);
   const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
   const [location, setLocation] = useState({});
+  const [isLoading, setIsLoading] = useState(false);
   const [submenuContent, setSubmenuContent] = useState({
     name: '',
     countries: [],
@@ -40,6 +41,8 @@ export const AppProvider = ({ children }) => {
         submenuContent,
         closeSubmenu,
         setIsSubmenuOpen,
+        isLoading,
+        setIsLoading,
       }}
     >
       {children}
