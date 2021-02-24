@@ -8,7 +8,7 @@ const navLinks = () => [
       {
         title: 'Canada',
         id: 1,
-        svg: './Assets/IMG/canada/canada.svg',
+        svg: './Assets/SVG/canada.svg',
         flag: './Assets/IMG/canada/can-flag.png',
         thumb: './Assets/IMG/canada/can01-thumb.jpg',
         bcgImg: './Assets/IMG/canada/can01-mid.jpg',

@@ -1,4 +1,4 @@
-import React, { useState, useContext, useRef } from 'react';
+import React, { useState, useContext } from 'react';
 import navLinks from './data';
 
 const AppContext = React.createContext();
@@ -12,7 +12,7 @@ export const AppProvider = ({ children }) => {
     name: '',
     countries: [],
   });
-  const [links, setLinks] = useState(navLinks);
+  const [links] = useState(navLinks);
 
   const toggleSidebar = () => {
     setisSidebarOpen(!isSidebarOpen);

@@ -5,7 +5,7 @@ import Error from './Error';
 import navLinks from './data';
 
 const Continent = () => {
-  const [links, setLinks] = useState(navLinks);
+  const [links] = useState(navLinks);
   const [fetchContinent, setFetchContinent] = useState({
     name: null,
     svgContinentt: null,
@@ -21,7 +21,7 @@ const Continent = () => {
       svgContinent: newContinent.svgContinent,
       countries: newContinent.countries,
     });
-  });
+  }, [continent]);
 
   return (
     <section className="continent">
@@ -32,14 +32,16 @@ const Continent = () => {
         <div className="cont-right">
           {fetchContinent.countries.map(({ title, bcgImg }) => {
             return (
-              <article
+              <Link
+                to={`${continent}/${title}`}
+                key={title}
                 className="cont-card-container toto"
                 style={{
                   backgroundImage: `url(${bcgImg})`,
                 }}
               >
                 <div className="cont-card-name">{title}</div>
-              </article>
+              </Link>
             );
           })}
         </div>

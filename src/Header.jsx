@@ -3,17 +3,11 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { useGlobalContext } from './context';
 import navLinks from './data';
 import Submenu from './Submenu';
-import { Link, useRouteMatch } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
-  const {
-    isSidebarOpen,
-    toggleSidebar,
-    isSubmenuOpen,
-    openSubmenu,
-    setIsSubmenuOpen,
-  } = useGlobalContext();
-  const [links, setLinks] = useState(navLinks);
+  const { isSidebarOpen, toggleSidebar, openSubmenu } = useGlobalContext();
+  const [links] = useState(navLinks);
   const { closeSubmenu } = useGlobalContext();
   const subLinks = useRef(null);
   const [value, setValue] = useState(null);
@@ -42,13 +36,12 @@ const Header = () => {
           <ul className="sub">
             {links.map(({ name, id }, i) => {
               return (
-                <Link to={`/${name}`}>
+                <Link key={id} to={`/${name}`}>
                   <span
                     className={`sub ${i === value && 'is-active'}`}
-                    key={id}
                     onMouseOver={displaySubmenu}
                     onClick={() => setValue(i)}
-                    useRef={subLinks}
+                    ref={subLinks}
                   >
                     {name}
                   </span>

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   const { isSidebarOpen, toggleSidebar } = useGlobalContext();
-  const [links, setLinks] = useState(navLinks);
+  const [links] = useState(navLinks);
 
   return (
     <aside>

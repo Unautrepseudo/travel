@@ -4,8 +4,8 @@ import { FaCircle, FaUndo } from 'react-icons/fa';
 import navLinks from './data';
 
 const Pays = () => {
-  // const { title } = useParams();
-  const [data, setData] = useState(navLinks);
+  // const { continent, pays } = useParams();
+  const [data] = useState(navLinks);
   const [value, setValue] = useState(0);
   const { countries } = data[0];
 
@@ -24,9 +24,9 @@ const Pays = () => {
   return (
     <section className="pays">
       {countries.map((country) => {
-        const { title, svg, flag, mid, img } = country;
+        const { title, svg, flag, mid } = country;
         return (
-          <>
+          <div key={title}>
             <div className="pays-left">
               <div className="pays-left">
                 <span className="pays-infos">
@@ -51,7 +51,7 @@ const Pays = () => {
                         {mid.map((item, i) => {
                           return (
                             <FaCircle
-                              key={i}
+                              key={item}
                               className={` ${i === value && 'tutu'}`}
                               onClick={() => setValue(i)}
                             />
@@ -66,7 +66,7 @@ const Pays = () => {
                 );
               })}
             </div>
-          </>
+          </div>
         );
       })}
     </section>

@@ -18,8 +18,12 @@ function App() {
           <Route exact path="/">
             <Main />
           </Route>
+          <Route exact path="/pays">
+            <Pays />
+          </Route>
           <Route exact path="/:continent" children={<Continent />}></Route>
-          <Route exact path="/:continent/:title" children={<Pays />}></Route>
+          {/* <Route exact path="/:continent/:title" children={<Pays />}></Route> */}
+
           <Route path="*">
             <Error />
           </Route>

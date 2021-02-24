@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
         <div className="footer">
-            Initiation React. CSS syndical. 02/21
+            Initiation React. Rendu provisoire. 02/21
         </div>
     )
 }

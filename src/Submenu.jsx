@@ -18,7 +18,7 @@ const Submenu = () => {
 
   useEffect(() => {
     const subCurrent = submenu.current;
-    const { left, bottom } = location;
+    const { left } = location;
     subCurrent.style.left = `${left}px`;
   }, [location]);
 
@@ -27,12 +27,12 @@ const Submenu = () => {
       className={`${!isSubmenuOpen ? 'submenu show-submenu' : 'hide'} sub  `}
     >
       <div className="sublinks-container sub" ref={submenu}>
-        {countries.map(({ thumb, title }, index) => {
+        {countries.map(({ thumb, title }) => {
           return (
             <Link
               to={`/${title}`}
               style={{ color: 'black' }}
-              key={index}
+              key={title}
               className="sub-cont sub"
               onClick={toggleMenu}
             >
